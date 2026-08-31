@@ -10,7 +10,7 @@ public class Authenticator {
       }
 
       if(password.equals(customer.getPassword())){
-        customer.setAuthenicated(true);
+        customer.setAuthenticated(true);
         return customer;
       }
       
@@ -18,6 +18,6 @@ public class Authenticator {
     }
 
     public static void logout(Customer customer){
-      customer.setAuthenicated(false);
+      customer.setAuthenticated(false);
     }
 }
